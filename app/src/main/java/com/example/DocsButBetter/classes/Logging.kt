@@ -7,6 +7,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shape
@@ -35,7 +36,7 @@ const val SHOW_MORE_DEFAULT = false
 const val SHOW_DEBUG_DEFAULT = true
 const val SNAP_TO_BTM_DEFAULT = true
 const val HEIGHT_DEFAULT = 400f
-const val MAX_VISIBLE_LOGS = 200
+const val MAX_VISIBLE_LOGS = 20
 
 enum class LogLevel {
   DEBUG, INFO, WARN, DANGER
@@ -108,7 +109,7 @@ class LoggerSingleton {
     if (diff > 0) {
       logOverflow.value = logOverflow.value!! + diff
       newList = newList.subList(diff, diff + MAX_VISIBLE_LOGS)
-      newList[0] = Log(LogLevel.DEBUG, "+ ${logOverflow.value} more")
+      newList[0] = Log(LogLevel.DEBUG, "+ ${logOverflow.value} overflowed")
     }
     logs.value = newList
   }
@@ -296,14 +297,14 @@ class LoggerSingleton {
         }
       } else {
         Box(
-          modifier = Modifier.align(Alignment.BottomEnd).padding(10.dp)
+          modifier = Modifier.align(Alignment.BottomCenter).padding(10.dp).alpha(.5f)
         ) {
           PressElement { toggleVisibility(true) }.Unit {
             Row(Modifier.clip(cornerShape).background(LIGHT_GREY_007).border(3.dp, DARK_GREY_003, cornerShape)) {
               Text(
-                "logs (${logsObserved.size + logOverflowObserved})",
+                "${logsObserved.size + logOverflowObserved}",
                 color = BLACK,
-                modifier = Modifier.padding(10.dp),
+                modifier = Modifier.padding(10.dp, 5.dp),
                 fontWeight = FontWeight.Bold
               )
             }

@@ -44,14 +44,6 @@ fun OptionsMenuUnit(
               .border(3.dp, DARK_GREY_003, cornerShape)
           ) {
             Column(Modifier.padding(10.dp), verticalArrangement = Arrangement.spacedBy(5.dp)) {
-              PressElement { activity.openPermissionsMenu() }.Unit {
-                Row(
-                  Modifier.clip(cornerShape).fillMaxWidth().background(LIGHT_GREY_009).padding(5.dp),
-                  horizontalArrangement = Arrangement.Center
-                ) {
-                  Text("permissions", color = BLACK)
-                }
-              }
               PressElement { }.Unit {
                 Row(
                   Modifier.clip(cornerShape).fillMaxWidth().background(LIGHT_GREY_009).padding(5.dp),

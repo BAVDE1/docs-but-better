@@ -1,4 +1,4 @@
-package com.example.DocsButBetter
+package com.example.docsButBetter
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -7,8 +7,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import com.example.DocsButBetter.classes.Logger
-import com.example.DocsButBetter.ui.theme.DocsButBetterTheme
+import com.example.docsButBetter.classes.Logger
+import com.example.docsButBetter.ui.theme.DocsButBetterTheme
 
 //const val OPTIONS_OPEN_DEFAULT = false
 

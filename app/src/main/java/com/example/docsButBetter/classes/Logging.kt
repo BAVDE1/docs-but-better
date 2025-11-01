@@ -1,4 +1,4 @@
-package com.example.DocsButBetter.classes
+package com.example.docsButBetter.classes
 
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
@@ -22,8 +22,8 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.MutableLiveData
-import com.example.DocsButBetter.*
-import com.example.DocsButBetter.ui.theme.*
+import com.example.docsButBetter.*
+import com.example.docsButBetter.ui.theme.*
 import java.text.SimpleDateFormat
 import java.time.Instant
 import java.util.*
@@ -36,7 +36,7 @@ const val SHOW_MORE_DEFAULT = false
 const val SHOW_DEBUG_DEFAULT = true
 const val SNAP_TO_BTM_DEFAULT = true
 const val HEIGHT_DEFAULT = 400f
-const val MAX_VISIBLE_LOGS = 20
+const val MAX_VISIBLE_LOGS = 200
 
 enum class LogLevel {
   DEBUG, INFO, WARN, DANGER

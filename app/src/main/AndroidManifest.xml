@@ -17,7 +17,7 @@
             android:theme="@style/Theme.DocsButBetter"
             tools:targetApi="31">
         <activity
-                android:name="com.example.DocsButBetter.MainActivity"
+                android:name="com.example.docsButBetter.MainActivity"
                 android:exported="true"
                 android:theme="@style/Theme.DocsButBetter">
             <intent-filter>

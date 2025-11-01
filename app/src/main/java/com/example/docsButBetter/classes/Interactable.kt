@@ -1,4 +1,4 @@
-package com.example.DocsButBetter.classes
+package com.example.docsButBetter.classes
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -21,9 +21,9 @@ import androidx.compose.ui.input.pointer.PointerInputChange
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.MutableLiveData
-import com.example.DocsButBetter.ui.theme.DARK_GREY_001
-import com.example.DocsButBetter.ui.theme.DARK_GREY_003
-import com.example.DocsButBetter.ui.theme.WHITE
+import com.example.docsButBetter.ui.theme.DARK_GREY_001
+import com.example.docsButBetter.ui.theme.DARK_GREY_003
+import com.example.docsButBetter.ui.theme.WHITE
 
 
 class PressElement(

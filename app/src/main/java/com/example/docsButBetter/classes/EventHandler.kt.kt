@@ -1,4 +1,4 @@
-package com.example.DocsButBetter.classes
+package com.example.docsButBetter.classes
 
 class EventHandler {
   private val allCallbacks: HashMap<Int, (Any?) -> Unit> = HashMap()

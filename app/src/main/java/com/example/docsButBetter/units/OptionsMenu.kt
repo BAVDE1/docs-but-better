@@ -1,4 +1,4 @@
-package com.example.DocsButBetter.units
+package com.example.docsButBetter.units
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -14,12 +14,12 @@ import androidx.compose.ui.input.pointer.PointerInputChange
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.MutableLiveData
-import com.example.DocsButBetter.MainActivity
-import com.example.DocsButBetter.classes.PressElement
-import com.example.DocsButBetter.ui.theme.BLACK
-import com.example.DocsButBetter.ui.theme.DARK_GREY_003
-import com.example.DocsButBetter.ui.theme.LIGHT_GREY_007
-import com.example.DocsButBetter.ui.theme.LIGHT_GREY_009
+import com.example.docsButBetter.MainActivity
+import com.example.docsButBetter.classes.PressElement
+import com.example.docsButBetter.ui.theme.BLACK
+import com.example.docsButBetter.ui.theme.DARK_GREY_003
+import com.example.docsButBetter.ui.theme.LIGHT_GREY_007
+import com.example.docsButBetter.ui.theme.LIGHT_GREY_009
 
 @Composable
 fun OptionsMenuUnit(

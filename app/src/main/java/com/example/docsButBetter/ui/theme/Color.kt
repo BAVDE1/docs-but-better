@@ -1,4 +1,4 @@
-package com.example.DocsButBetter.ui.theme
+package com.example.docsButBetter.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
